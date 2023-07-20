@@ -201,3 +201,35 @@ console.log(typeof joined);
 let message2 = "Hi hello namskar";
 let combinedArr = message2.split(" ");
 console.log(combinedArr);
+
+//sorting in array
+
+let numberSort = [5, 10, 4, 40];
+numberSort.sort();
+console.log(numberSort);
+//sorts as the string
+//same is the case with the reverse
+
+//filerting with call back functioon
+
+let numberFilt = [1, 5, -5, -4, 3, 9, -7];
+
+let filterFuct = numberFilt.filter((value) => value >= 0);
+
+console.log(filterFuct);
+
+//Map in javascript
+
+let numberMaps = [7, 8, 9, 10];
+let mapFunct = numberMaps.map((value) => "student_no " + value);
+
+console.log(mapFunct);
+
+//creating objects and Chaining
+
+let unfilNumber = [1, 2, -6, -9];
+
+let items = unfilNumber
+  .filter((value) => value >= 0)
+  .map((num) => ({ value: num }));
+console.log(items);
