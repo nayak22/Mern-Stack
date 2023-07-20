@@ -59,3 +59,22 @@ let string4 = `My Name is ${firstName} ${lastName}`;
 console.log(string4);
 
 //DateTime in JavScript
+let date = new Date();
+
+let date2 = new Date("June 20 1998 07:15");
+let date3 = new Date(1998, 11, 20, 7); //2nd parameter i.e month is 0 indexed  0-jan, 1 feb...
+let date4 = new Date(1995, 11, 20, 7);
+console.log(date4);
+date4.setFullYear(1947);
+
+console.log(date);
+// console.log(date1);
+console.log(date2);
+console.log(date3);
+console.log(date4);
+
+console.log(date.getDate());
+console.log(date.getMonth());
+console.log(date.getUTCDate());
+console.log(date.getHours());
+console.log(date.getUTCHours());
